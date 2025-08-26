@@ -55,15 +55,15 @@
     h2{font-family:'Zen Dots',sans-serif;font-size:clamp(22px,4.5vw,38px);margin:0 0 12px}
     .sub{color:#dedbd6;margin-bottom:26px}
 
-    /* === 酷炫卡片：玻璃 + 漸層邊框 + hover 發光 === */
+    /* === 酷炫卡片：玻璃 + 漸層邊框 + hover 發光 + 白字 === */
     .card{
       position: relative;
-      background: rgba(255,255,255,.08);
-      border: 1px solid rgba(255,255,255,.18);
-      color: #fff;
+      background:#141824; /* 深色背景，對比更清楚 */
+      border:1px solid rgba(255,255,255,.18);
+      color:#fff;
       padding:20px;
       border-radius:16px;
-      box-shadow:0 10px 30px rgba(0,0,0,.35);
+      box-shadow:0 10px 30px rgba(0,0,0,.45);
       transition: all .35s ease;
       overflow: hidden;
     }
@@ -84,6 +84,7 @@
       z-index:0;
     }
     .card *{ position:relative; z-index:1 }
+    .card h3,.card p,.card li,.card label{ color:#fff !important; }
     .card:hover{
       transform:translateY(-6px) scale(1.02);
       box-shadow:0 20px 40px rgba(0,0,0,.6);
