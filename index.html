@@ -4,10 +4,70 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>南湄宮｜媽祖保庇 — 青年潮流宮廟</title>
+  <meta name="description" content="以年輕視覺打造的媽祖廟官方單頁，活動資訊、線上祈福、抽籤詩、交通地圖，一頁看懂。" />
+  <meta name="theme-color" content="#cf2027" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&family=Noto+Serif+TC:wght@500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --mazu-red:#cf2027;
+      --royal:#6c1d6f;
+      --gold:#ffd166;
+      --ink:#0f0f14;
+      --paper:#faf7f0;
+      --glass:rgba(255,255,255,.12);
+      --blur:blur(10px);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;color:#fff;background:linear-gradient(135deg,#0f0f14,#1b0f22,#0b1b2a);
+      font-family:'Noto Sans TC',sans-serif;
+    }
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1100px,92%);margin:0 auto}
+    header{padding:120px 0;text-align:center}
+    header h1{font-family:'Noto Serif TC',serif;font-weight:900;font-size:clamp(36px,6vw,64px)}
+    .tag{padding:6px 12px;border:1px solid rgba(255,255,255,.2);border-radius:20px;background:rgba(255,255,255,.08)}
+    .lead{font-size:18px;color:#eee;max-width:700px;margin:10px auto}
+    section{padding:60px 0}
+    h2{font-family:'Noto Serif TC',serif;font-weight:900;font-size:clamp(26px,4.5vw,42px)}
+    .card{background:rgba(255,255,255,.06);padding:20px;border-radius:16px;margin:10px 0}
+    footer{padding:40px 0;text-align:center;color:#aaa}
+  </style>
 </head>
 <body>
-  <h1>媽祖同行，庇你每一天</h1>
-  <p>這是完整版炫彩網頁，請上傳到 GitHub Repo 使用。</p>
-  <p>完整內容請使用 ChatGPT Canvas 下載 HTML 檔案再替換。</p>
+  <header>
+    <span class="tag">青年潮流宮廟 ✦ 社群友善</span>
+    <h1>媽祖同行，<span style="color:var(--gold)">庇</span>你每一天</h1>
+    <p class="lead">這裡是 <b>南湄宮</b> 官方網站，把宮廟文化玩出新味道：街頭電音、文創小物、志工社群、百年香火與年輕活力同在。</p>
+  </header>
+
+  <section class="container">
+    <h2>活動亮點</h2>
+    <div class="card">霓虹祈福牆 ✦ 限量徽章打卡熱點</div>
+    <div class="card">電音三太子 × DJ 遶境派對</div>
+    <div class="card">青年志工社群 ✦ IG / TikTok 共創</div>
+  </section>
+
+  <section class="container">
+    <h2>線上祈福</h2>
+    <div class="card">
+      <form>
+        <label>姓名：<input type="text" required></label><br><br>
+        <label>心願：<textarea rows="3" required></textarea></label><br><br>
+        <button type="submit">送出祈願</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>交通資訊</h2>
+    <div class="card">地址：高雄市 ○○ 區 ○○ 路 123 號<br>捷運 ○○ 站步行 6 分鐘</div>
+  </section>
+
+  <footer>
+    <p>© 2025 南湄宮 — 以年輕視覺重新演繹傳統文化</p>
+  </footer>
 </body>
 </html>
